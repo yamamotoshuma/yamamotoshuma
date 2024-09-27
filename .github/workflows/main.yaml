@@ -1,17 +1,17 @@
 name: Main
 on:
-  # run automatically every 24 hours
+  # 自動実行: 毎日0時
   schedule:
     - cron: "0 0 * * *"
 
-  # allows to manually run the job at any time
+  # 手動実行を許可
   workflow_dispatch:
 
-  # run on every push on the main branch
-  # don't forget to change if you're using 'master' branch
+  # mainブランチへのプッシュ時に実行
   push:
     branches:
     - main
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -22,6 +22,7 @@ jobs:
         filename: output/metrics.base.svg
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         base: header, activity, community, repositories, metadata
+
     - name: Most used (with details)
       uses: lowlighter/metrics@latest
       with:
@@ -36,6 +37,7 @@ jobs:
         plugin_languages_limit: 8
         plugin_followup: yes
         plugin_followup_indepth: yes
+
     - name: Compact display
       uses: lowlighter/metrics@latest
       with:
@@ -49,26 +51,32 @@ jobs:
         plugin_achievements_display: compact
         plugin_achievements_threshold: X
 
+    # リポジトリのチェックアウト (v3を使用)
     - name: Check out repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
+    # Pythonのセットアップ (必要なら)
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
         python-version: '3.x'
 
+    # 依存関係のインストール (matplotlibが必要な場合)
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install matplotlib
 
+    # Qiita プロフィール情報の取得 (エンドポイントを修正)
     - name: Fetch Qiita Profile Information
       run: |
-        curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/yamamotoooon" > qiita_profile.json
+        curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/authenticated_user" > qiita_profile.json
 
+    # SVGグラフの生成 (Pythonスクリプトを使って)
     - name: Generate Qiita Profile Graph
       run: python generate_svg.py
 
+    # SVGのアップロード (v3を使用)
     - name: Upload SVG
       uses: actions/upload-artifact@v3
       with:
