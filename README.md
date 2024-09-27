@@ -20,7 +20,7 @@
 
 ### 👨‍💻 About Me
 
-- 💼 **Full-stack developer** with expertise in **Java**, **Spring**, **Vue.js**, and **TypeScript**.
+- 💼 **Back-end developer** skilled in **Spring** and **API development**, with experience in **Vue.js** for building user interfaces.
 - 🔍 Focused on building scalable, maintainable systems using **Spring** for back-end and **Vue.js** for front-end.
 - 🛠 Skilled in developing **APIs** with **Spring Boot** and creating responsive **Vue.js** applications.
 - 🎓 Certified in **Basic Information Technology Engineer** and **AWS Certified Cloud Practitioner**.
