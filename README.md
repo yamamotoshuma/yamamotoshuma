@@ -1,11 +1,9 @@
 ## 🌟 My Developer Profile 🌟
 
 <p align="center">
-  <!-- デザイン背景を追加したQiita Profile -->
+  <!-- Qiita Profile HTML Display -->
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="output/qiita_profile.svg" width="500" style="border-radius: 15px; background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);" />
-    <source media="(prefers-color-scheme: light)" srcset="output/qiita_profile.svg" width="500" style="border-radius: 15px; background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);" />
-    <img alt="Qiita Profile Overview" src="output/qiita_profile.svg" style="border-radius: 15px; background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);" />
+    <iframe src="output/qiita_profile.html" width="500" height="300" frameborder="0" style="border-radius: 15px; background: white;"></iframe>
   </picture>
 </p>
 
