@@ -2,7 +2,7 @@ import json
 import matplotlib.pyplot as plt
 
 # Qiitaのプロフィールデータを読み込み
-with open('qiita_profile.json', 'r') as file:
+with open('output/qiita_profile.json', 'r') as file:
     data = json.load(file)
 
 # Qiitaのプロフィールから、フォロワー数などを取得
