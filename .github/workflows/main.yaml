@@ -70,7 +70,7 @@ jobs:
       run: python generate_svg.py
 
     - name: Upload SVG
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: qiita-profile-graph
         path: output/qiita_profile.svg
