@@ -58,6 +58,8 @@
 ---
 
 <p align="center">
+  <img src="https://img.shields.io/badge/-Java-F80000?logo=java&logoColor=white&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Spring-6DB33F?logo=spring&logoColor=white&style=for-the-badge" />
   <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" />
   <img src="https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" />
   <img src="https://img.shields.io/badge/-Vue.js-4FC08D?logo=vue.js&logoColor=white&style=for-the-badge" />
