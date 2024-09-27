@@ -1,6 +1,20 @@
-[![My Qiita posts](https://qiita-badge.apiapi.app/s/yamamotoooon/posts.svg)](http://qiita.com/mikkame)
-[![My Qiita contributions](https://qiita-badge.apiapi.app/s/yamamotoooon/contributions.svg)](http://qiita.com/mikkame)
-[![My Qiita followers](https://qiita-badge.apiapi.app/s/yamamotoooon/followers.svg)](http://qiita.com/mikkame)
+<p align="left">
+  <!-- GitHub Followers Badge -->
+  <a href="https://github.com/yamamotoshuma">
+    <img height="20" src="https://img.shields.io/github/followers/yamamotoshuma?label=follow&logo=github&style=flat" />
+  </a>
+
+  <!-- Qiita Posts, Contributions, and Followers Badges -->
+  <a href="http://qiita.com/yamamotoooon">
+    <img height="20" src="https://qiita-badge.apiapi.app/s/yamamotoooon/posts.svg" alt="My Qiita posts" />
+  </a>
+  <a href="http://qiita.com/yamamotoooon">
+    <img height="20" src="https://qiita-badge.apiapi.app/s/yamamotoooon/contributions.svg" alt="My Qiita contributions" />
+  </a>
+  <a href="http://qiita.com/yamamotoooon">
+    <img height="20" src="https://qiita-badge.apiapi.app/s/yamamotoooon/followers.svg" alt="My Qiita followers" />
+  </a>
+</p>
 
 ## 🌟 My Developer Profile 🌟
 
