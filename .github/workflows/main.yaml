@@ -71,7 +71,7 @@ jobs:
     # Qiita プロフィール情報の取得 (エンドポイントを修正)
     - name: Fetch Qiita Profile Information
       run: |
-        curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/authenticated_user" -o output/qiita_profile.json
+        curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/users/yamamotoooon" -o output/qiita_profile.json
 
     # SVGグラフの生成 (Pythonスクリプトを使って)
     - name: Generate Qiita Profile Graph
