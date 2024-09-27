@@ -48,3 +48,29 @@ jobs:
           scripter, packager, explorer, infographile, manager
         plugin_achievements_display: compact
         plugin_achievements_threshold: X
+
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install matplotlib
+
+    - name: Fetch Qiita Profile Information
+      run: |
+        curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/authenticated_user" > qiita_profile.json
+
+    - name: Generate Qiita Profile Graph
+      run: python generate_svg.py
+
+    - name: Upload SVG
+      uses: actions/upload-artifact@v2
+      with:
+        name: qiita-profile-graph
+        path: output/qiita_profile.svg
