@@ -18,7 +18,23 @@
 
 ## 🌟 My Developer Profile 🌟
 
+### 👨‍💻 About Me
 
+- 💼 **Full-stack developer** with expertise in **Java**, **Spring**, **Vue.js**, and **TypeScript**.
+- 🔍 Focused on building scalable, maintainable systems using **Spring** for back-end and **Vue.js** for front-end.
+- 🛠 Skilled in developing **APIs** with **Spring Boot** and creating responsive **Vue.js** applications.
+- 🎓 Certified in **Basic Information Technology Engineer** and **AWS Certified Cloud Practitioner**.
+- 📊 Experienced in **SQL** and writing complex queries for efficient data management.
+
+---
+
+### 💡 Tech Stack
+
+- **Languages**: Java, JavaScript, TypeScript, PHP (minor), VB (minor)
+- **Frameworks & Libraries**: Spring, Vue.js, Laravel (minor), .NET (minor)
+- **Database**: MySQL, PostgreSQL, SQLServer
+- **Tools**: Git, Docker, Gradle, AWS
+- **API & Communication**: REST, JSON, HTTP, JWT
 
 ---
 
@@ -65,6 +81,13 @@
     <img alt="GitHub profile achievements" src="output/metrics.plugin.achievements.compact.svg" style="border-radius: 10px;" />
   </picture>
 </p>
+
+---
+
+### 🏅 Certifications
+
+- **AWS Certified Cloud Practitioner**  
+  [![AWS Badge](https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png)](https://www.credly.com/badges/4e4e0ed7-ea57-4663-9a21-79b5667f6fa8/public_url)
 
 ---
 
