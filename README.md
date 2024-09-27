@@ -1,11 +1,10 @@
+[![My Qiita posts](https://qiita-badge.apiapi.app/s/yamamotoooon/posts.svg)](http://qiita.com/mikkame)
+[![My Qiita contributions](https://qiita-badge.apiapi.app/s/yamamotoooon/contributions.svg)](http://qiita.com/mikkame)
+[![My Qiita followers](https://qiita-badge.apiapi.app/s/yamamotoooon/followers.svg)](http://qiita.com/mikkame)
+
 ## 🌟 My Developer Profile 🌟
 
-<p align="center">
-  <!-- Qiita Profile HTML Display -->
-  <picture>
-    <iframe src="output/qiita_profile.html" width="500" height="300" frameborder="0" style="border-radius: 15px; background: white;"></iframe>
-  </picture>
-</p>
+
 
 ---
 
