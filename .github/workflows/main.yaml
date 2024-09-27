@@ -68,16 +68,17 @@ jobs:
         python -m pip install --upgrade pip
         pip install matplotlib
 
-    # Qiita プロフィール情報の取得 (エンドポイントを修正)
+    # Qiita プロフィール情報の取得
     - name: Fetch Qiita Profile Information
       run: |
-        curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/users/yamamotoooon" -o output/qiita_profile.json
+        mkdir -p output
+        curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/authenticated_user" -o output/qiita_profile.json
 
-    # SVGグラフの生成 (Pythonスクリプトを使って)
+    # SVGグラフの生成
     - name: Generate Qiita Profile Graph
       run: python generate_svg.py
 
-    # SVGのアップロード (v3を使用)
+    # SVGのアップロード
     - name: Upload SVG
       uses: actions/upload-artifact@v3
       with:
