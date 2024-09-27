@@ -64,7 +64,7 @@ jobs:
 
     - name: Fetch Qiita Profile Information
       run: |
-        curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/authenticated_user" > qiita_profile.json
+        curl -H "Authorization: Bearer ${{ secrets.QIITA_TOKEN }}" "https://qiita.com/api/v2/yamamotoooon" > qiita_profile.json
 
     - name: Generate Qiita Profile Graph
       run: python generate_svg.py
