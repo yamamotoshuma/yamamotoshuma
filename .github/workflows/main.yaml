@@ -78,10 +78,3 @@ jobs:
     - name: Generate Qiita Profile HTML
       run: |
         python generate_html.py
-
-    # HTMLのアップロード
-    - name: Upload HTML
-      uses: actions/upload-artifact@v4
-      with:
-        name: qiita-profile-html
-        path: output/qiita_profile.html
