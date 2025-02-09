@@ -30,11 +30,15 @@
 
 ### 💡 Tech Stack
 
-- **Languages**: Java, JavaScript, TypeScript, PHP (minor), VB (minor)
-- **Frameworks & Libraries**: Spring, Vue.js, Laravel (minor), .NET (minor)
-- **Database**: MySQL, PostgreSQL, SQLServer
-- **Tools**: Git, Docker, Gradle, AWS
-- **API & Communication**: REST, JSON, HTTP, JWT
+| Category               | Technologies & Tools                                   |
+|------------------------|--------------------------------------------------------|
+| **Languages**         | Java, JavaScript, TypeScript, PHP (minor), VB (minor) |
+| **Frameworks & Libraries** | Spring, Vue.js, Laravel (minor), .NET (minor) |
+| **Database**          | MySQL, PostgreSQL, SQLServer                           |
+| **Cloud & DevOps**    | AWS, Azure, Docker, Jenkins, Github Actions           |
+| **Version Control**   | Git, GitHub, GitLab                                    |
+| **Build Tools**       | Gradle, Maven                                          |
+| **API & Communication** | REST, OpenAPI, JSON, HTTP, JWT, gRPC                |
 
 ---
 
